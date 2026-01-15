@@ -1,0 +1,185 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": ["hai", "halo", "hello", "hi", "pagi", "siang", "malam", "assalamualaikum"],
+      "responses": [
+        "Halo! Tanyakan apa saja tentang fisika kuantum: superposisi, entanglement, double-slit, atau ketidakpastian.",
+        "Hai! Mau mulai dari konsep dasar dulu (fungsi gelombang, pengukuran), atau langsung ke contoh seperti double-slit?"
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": ["bye", "dadah", "sampai jumpa", "see you", "keluar", "quit"],
+      "responses": [
+        "Sampai jumpa! Kalau balik lagi, coba tanya: 'Kenapa pengukuran itu penting di kuantum?'",
+        "Bye! Semoga makin paham kuantum. Jangan ragu tanya lagi."
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "thanks",
+      "patterns": ["makasih", "terima kasih", "thanks", "thx", "mantap", "keren"],
+      "responses": [
+        "Sama-sama! Mau lanjut ke entanglement atau prinsip ketidakpastian?",
+        "Sip! Kalau mau latihan, coba tanya: 'Apa bedanya superposisi dan campuran (mixed state)?'"
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "superposition",
+      "patterns": [
+        "apa itu superposisi",
+        "jelasin superposisi",
+        "superposisi itu apa",
+        "superposition",
+        "mengapa superposisi terjadi"
+      ],
+      "responses": [
+        "Superposisi adalah keadaan kuantum yang bisa merupakan kombinasi beberapa kemungkinan sekaligus sampai dilakukan pengukuran.",
+        "Dalam kuantum, sistem dapat berada pada kombinasi keadaan (superposisi). Hasil pengukuran memberi salah satu outcome dengan probabilitas tertentu."
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "wavefunction",
+      "patterns": [
+        "apa itu fungsi gelombang",
+        "fungsi gelombang itu apa",
+        "wavefunction",
+        "psi itu apa",
+        "makna psi"
+      ],
+      "responses": [
+        "Fungsi gelombang (sering ditulis ψ) adalah cara matematis untuk merepresentasikan keadaan kuantum; dari sini kita dapat probabilitas hasil pengukuran.",
+        "ψ merepresentasikan state kuantum. Kuadrat magnitudonya berhubungan dengan probabilitas menemukan hasil tertentu saat pengukuran."
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "measurement",
+      "patterns": [
+        "apa itu pengukuran di kuantum",
+        "kenapa pengukuran penting",
+        "measurement",
+        "kolaps itu apa",
+        "collapse"
+      ],
+      "responses": [
+        "Pengukuran dalam kuantum bukan sekadar 'melihat'; ia berinteraksi dengan sistem dan memaksa hasil tertentu muncul dari superposisi.",
+        "Sering dijelaskan sebagai 'kolaps' dari superposisi menjadi satu hasil. Detailnya tergantung interpretasi, tapi efek eksperimennya nyata: informasi jalur bisa menghilangkan interferensi."
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "double_slit",
+      "patterns": [
+        "double slit",
+        "dua celah",
+        "celah ganda",
+        "eksperimen dua celah",
+        "kenapa muncul interferensi"
+      ],
+      "responses": [
+        "Eksperimen dua celah menunjukkan interferensi saat kita tidak mengetahui jalur partikel. Jika jalurnya diukur, pola interferensi menghilang.",
+        "Double-slit: tanpa informasi jalur → interferensi (seperti gelombang). Dengan pengukuran jalur → perilaku tampak seperti partikel (interferensi hilang)."
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "uncertainty",
+      "patterns": [
+        "prinsip ketidakpastian",
+        "uncertainty principle",
+        "heisenberg",
+        "kenapa posisi dan momentum tidak bisa tepat",
+        "ketidakpastian heisenberg"
+      ],
+      "responses": [
+        "Prinsip ketidakpastian (Heisenberg) menyatakan ada pasangan besaran (mis. posisi dan momentum) yang tidak bisa ditentukan tepat secara bersamaan.",
+        "Bukan karena alat ukur jelek saja; ada batas fundamental pada ketelitian bersama untuk pasangan besaran tertentu."
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "entanglement",
+      "patterns": [
+        "apa itu entanglement",
+        "entanglement itu apa",
+        "keterikatan kuantum",
+        "belitan kuantum",
+        "partikel terjerat"
+      ],
+      "responses": [
+        "Entanglement adalah korelasi kuantum kuat: dua sistem bisa punya keadaan gabungan sehingga hasil ukur satu terkait dengan yang lain.",
+        "Entanglement membuat hasil pengukuran partikel A dan B berkorelasi kuat. Ini tidak otomatis berarti bisa mengirim pesan lebih cepat dari cahaya."
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "decoherence",
+      "patterns": [
+        "apa itu decoherence",
+        "dekoherensi",
+        "kenapa qubit mudah rusak",
+        "kenapa kuantum susah dipertahankan",
+        "noise kuantum"
+      ],
+      "responses": [
+        "Decoherence (dekoherensi) terjadi saat sistem kuantum berinteraksi dengan lingkungan sehingga sifat kuantumnya (koherensi/interferensi) melemah atau hilang.",
+        "Dekoherensi adalah alasan besar kenapa sistem kuantum rapuh: interaksi kecil dengan lingkungan bisa merusak koherensi."
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "quantum_computing",
+      "patterns": [
+        "apa itu qubit",
+        "qubit itu apa",
+        "quantum computing",
+        "komputer kuantum",
+        "kenapa komputer kuantum bisa cepat"
+      ],
+      "responses": [
+        "Qubit adalah unit informasi kuantum; ia bisa berada pada superposisi dan bisa terentang (entangled) dengan qubit lain.",
+        "Komputasi kuantum memanfaatkan superposisi, entanglement, dan interferensi untuk memperkuat probabilitas jawaban yang benar pada algoritma tertentu."
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "confused",
+      "patterns": [
+        "aku bingung",
+        "bingung",
+        "kok bisa",
+        "gimana maksudnya",
+        "beda apa",
+        "jelasin pelan pelan"
+      ],
+      "responses": [
+        "Oke, bagian mana yang bingung: superposisi, pengukuran, entanglement, atau dua celah? Sebut 1 istilah yang paling mengganggu.",
+        "Boleh kasih contoh kalimat yang bikin kamu bingung? Nanti diurai step-by-step."
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "angry",
+      "patterns": ["bodoh", "tolol", "goblok", "anjing", "bangsat"],
+      "responses": [
+        "Tetap sopan ya. Kalau pertanyaannya spesifik, bisa dijawab jelas dan pelan-pelan.",
+        "Bahasnya santai saja. Tulis pertanyaan kuantum yang kamu mau."
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "noanswer",
+      "patterns": [],
+      "responses": [
+        "Maaf, belum nangkep. Coba pakai kata kunci: superposisi, entanglement, dua celah, pengukuran, atau ketidakpastian.",
+        "Bisa ulangi dengan pertanyaan lebih spesifik? Contoh: 'Apa itu entanglement?'"
+      ],
+      "context": [""]
+    }
+  ]
+}

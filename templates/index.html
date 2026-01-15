@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Quantum RPG Chatbot</title>
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+  <main class="scene">
+    <section class="stage" aria-label="RPG chat stage">
+      <div class="portrait-wrap">
+        <img id="portrait" alt="Karakter" />
+        <div class="mood" id="moodTag">NORMAL</div>
+      </div>
+
+      <div class="dialogue" role="group" aria-label="Dialogue box">
+        <div class="dialogue__header">
+          <div class="nameplate">Q-Bot</div>
+          <button id="btnHistory" class="btn ghost" type="button" aria-haspopup="dialog">History</button>
+        </div>
+
+        <div id="text" class="dialogue__text" aria-live="polite"></div>
+
+        <div class="dialogue__footer">
+          <input id="input" class="input"
+            placeholder="Tanya tentang fisika kuantum… (mis: 'Apa itu superposisi?')"
+            autocomplete="off" />
+          <button id="btnSend" class="btn" type="button">Kirim</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <dialog id="historyDialog" class="history" aria-label="Riwayat chat">
+    <form method="dialog" class="history__header">
+      <div class="history__title">Chat history</div>
+      <button class="btn ghost" value="close" aria-label="Tutup">Tutup</button>
+    </form>
+
+    <div class="history__body" id="historyBody" aria-live="polite"></div>
+
+    <div class="history__footer">
+      <button id="btnClear" class="btn ghost" type="button">Clear</button>
+    </div>
+  </dialog>
+
+  <script src="/static/app.js"></script>
+</body>
+</html>
